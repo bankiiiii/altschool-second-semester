@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  justify-content: center; /* Center the card horizontally */
+  align-items: center; /* Center the card vertically */
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(229, 204, 255, 1);
+  /* background-color: black; */
+  font-family: "Libre Baskerville", serif;
+}
+
+/* White card styling */
+.card {
+  position: relative;
+  width: 500px;
+  height: 500px; /* Fixed height for better control */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; Ensure the image is clipped to the section */
+  padding: 0;
+  height: 400px;
+}
+
+/* Top section with background image */
+.card .top-section {
+  position: relative;
+  flex: 1; /* Takes up half of the card */
+  background-image: url('watch-1.jpg'); /* Ensure this path is correct */
+  background-size: cover; /* Cover the full section */
+  background-position: center; /* Center the background image */
+  border-radius: 8px 8px 0 0; /* Round the top corners */
+  height: 60%; /* Ensure it takes half of the card's height */
+}
+
+/* Bottom section with white background */
+.card .bottom-section {
+  flex: 1; /* Takes up the other half of the card */
+  background-color: white;
+  padding: 0px 20px;
+  height: auto;
+  border-radius: 0 0 8px 8px; /* Round the bottom corners */
+}
+
+/* Text styling */
+.card h3 {
+  color: black;
+  font-size: 20px;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Additional styling for the bottom section */
+.card .bottom-section h3 {
+  font-size: 18px;
+}
+
+.card_2 {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 18px;
+  background-color: rgb(255, 253, 208);
+  width: 400;
+  height: auto;
+  padding: 5px 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-weight: bold;
+}
+
+
+button {
+  position: absolute; /* Positions the button absolutely */
+  top: 10px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position if necessary */
+  color: black;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white; /* Optional: add background color for better visibility */
+  cursor: pointer; /* Makes the button look clickable */
+}
